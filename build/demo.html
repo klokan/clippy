@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Clippy Input Box</title>
+</head>
+<body>
+
+
+<h1>Clippy Flash for Copy to Clipboard from an Input Form</h1>
+
+<h3>Content of a form</h3>
+<input id="input1" style="width:300px;" name="input1" value="DYNAMIC TEXT FROM INPUT FORM"/>
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+        width="110"
+        height="14"
+        id="clippy" >
+<param name="movie" value="clippy.swf"/>
+<param name="allowScriptAccess" value="always" />
+<param name="quality" value="high" />
+<param name="scale" value="noscale" />
+<param NAME="FlashVars" value="id=input1">
+<param name="bgcolor" value="#fff">
+<embed src="clippy.swf"
+       width="110"
+       height="14"
+       name="clippy"
+       quality="high"
+       allowScriptAccess="always"
+       type="application/x-shockwave-flash"
+       pluginspage="http://www.macromedia.com/go/getflashplayer"
+       FlashVars="id=input1"
+       bgcolor="#fff"
+/>
+</object>
+
+</body>
+</html>
